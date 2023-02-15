@@ -15,7 +15,7 @@ print("""
         Choose either 'investment' or 'loan' from the menu below to proceed:
         
         investment  -  to calculate the amount of interest you'll earn on your investment
-        loan       -  to calculate the amount you'll have to pay on a home loan 
+        loan       -  to calculate the monthly amount you'll have to pay on a loan 
         
         *********************************************************************************
         """)
