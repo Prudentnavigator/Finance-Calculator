@@ -8,9 +8,7 @@
 
 import math
 
-
 # Display menu
-
 print("""
         ********************************************************************************* 
 
@@ -24,18 +22,15 @@ print("""
 
 
 # Request the user to enter a choice from the menu
-
 choice = str.lower(input("\tPlease enter your choice: "))
 
 
 # Verify the input is matching the menu, if not display error message and prompt user to re-enter choice
-
 if choice != "investment" and choice != "bond":
     choice = str.lower(input("\tError: option does not exist! Please enter investment or bond: "))
 
 
 # Evaluate which financial instrument was chosen and prompt the user to provide relevant information
-
 if choice == "investment":
     deposit_amount = float(input("\tHow much would you like to deposit: "))
     interest_rate = float(input("\tWhat is the interest rate:      %\b\b\b\b\b\b"))
@@ -48,12 +43,10 @@ if choice == "investment":
     if interest == "simple":            
 
         # Calculate the return of simple interest for the investment
-
         total_amount = deposit_amount * ( 1 + (interest_rate / 100) * invest_duration )
         amount_earned = total_amount - deposit_amount
 
         # Display results of the calculation
-
         print(f"""
         *********************************************************************************
                                                                                            
@@ -67,12 +60,10 @@ if choice == "investment":
     elif interest == "compound":          
 
         # Calculate the return of compound interest for the investment
-        
         total_amount = deposit_amount * math.pow( 1 + (interest_rate / 100 ), invest_duration )
         amount_earned = total_amount - deposit_amount
 
         # Display results of the calculation
-
         print(f"""
         *********************************************************************************
                                                                                            
@@ -89,12 +80,10 @@ elif choice == "bond":
     payment_duration = float(input("\tIn how many month's would you like to repay the loan: "))
 
     # Calculate the monthly payments of the loan
-
     rate = interest_rate / 100
     monthly_payment = loan_amount * (rate / 12) * (1/(1-(1+(rate / 12))**(-payment_duration))) 
     
     # Display results of the calculation
-
     print(f"""
         ********************************************************************************
          
