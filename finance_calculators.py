@@ -3,7 +3,7 @@
 
 
 # finance_calculators.py--a program that allows the user to access two different 
-#   financial calculators: an investment and a home loan repayment calculator.
+#   financial calculators: an investment and a loan repayment calculator.
 
 
 import math
@@ -12,10 +12,10 @@ import math
 print("""
         ********************************************************************************* 
 
-        Choose either 'investment' or 'bond' from the menu below to proceed:
+        Choose either 'investment' or 'loan' from the menu below to proceed:
         
         investment  -  to calculate the amount of interest you'll earn on your investment
-        bond        -  to calculate the amount you'll have to pay on a home loan 
+        loan       -  to calculate the amount you'll have to pay on a home loan 
         
         *********************************************************************************
         """)
@@ -26,8 +26,8 @@ choice = str.lower(input("\tPlease enter your choice: "))
 
 
 # Verify the input is matching the menu, if not display error message and prompt user to re-enter choice
-if choice != "investment" and choice != "bond":
-    choice = str.lower(input("\tError: option does not exist! Please enter investment or bond: "))
+if choice != "investment" and choice != "loan":
+    choice = str.lower(input("\tError: option does not exist! Please enter investment or loan: "))
 
 
 # Evaluate which financial instrument was chosen and prompt the user to provide relevant information
@@ -74,8 +74,8 @@ if choice == "investment":
         *********************************************************************************
         """)
 
-elif choice == "bond":
-    loan_amount = float(input("\tWhat's the value of the house or loan amount: "))
+elif choice == "loan":
+    loan_amount = float(input("\tHow much would you like to borrow: "))
     interest_rate = float(input("\tWhat is the interest rate:      %\b\b\b\b\b\b"))
     payment_duration = float(input("\tIn how many month's would you like to repay the loan: "))
 
