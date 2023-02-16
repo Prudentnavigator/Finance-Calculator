@@ -1,4 +1,4 @@
-Bootcamp Project II
+Bootcamp Project I
 
 # finance_calculators.py--a program that allows the user to access two different 
 #   financial calculators: an investment and a loan repayment calculator.
