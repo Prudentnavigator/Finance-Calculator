@@ -4,7 +4,7 @@ For this task, assume that you have been approached by a small financial company
 An investment calculator and a loan repayment calculator.
 
 1. The user should be allowed to choose which calculation they want to do. 
-    How the user capitalizes their selection should not affect how the program proceeds, i.e. ‘ Bond’, ‘bond’, ‘BOND’ or ‘investment’, ‘Investment’,           'INVESTMENT’, etc., should all be recognized as valid entries. If the user doesn’t type in a valid input, show an appropriate error message.
+    How the user capitalizes their selection should not affect how the program proceeds, i.e. ‘ loan’, ‘Loan’, ‘LOAN’ or ‘investment’, ‘Investment’,           'INVESTMENT’, etc., should all be recognized as valid entries. If the user doesn’t type in a valid input, show an appropriate error message.
 
 2. If the user selects ‘investment’, do the following: 
     ■  Ask the user to input:
